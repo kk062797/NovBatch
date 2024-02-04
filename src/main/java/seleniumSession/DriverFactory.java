@@ -25,26 +25,31 @@ public class DriverFactory {
 		return driver;
 	}
 
+	// To launch Url
 	public void launchUrl(String url) {
 		driver.get(url);
 	}
 
+	// To get page title
 	public String pageTitle() {
 		String title = driver.getTitle();
 		System.out.println("Page Title: " + title);
 		return title;
 	}
 
+	// To get page Url
 	public String currentPageURL() {
 		String currenturl = driver.getCurrentUrl();
 		System.out.println("Current Url: " + currenturl);
 		return currenturl;
 	}
 
+	// To close browser
 	public void closeBrowser() {
 		driver.close();
 	}
 
+	// To quit browser
 	public void quitBrowser() {
 		driver.quit();
 	}
